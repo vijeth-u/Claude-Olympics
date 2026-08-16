@@ -1,0 +1,5 @@
+# All packages must come from JFrog Artifactory.
+# PIP_INDEX_URL is set by the agent — no extra config needed.
+pandas==2.1.4
+numpy==1.26.2
+lightgbm==4.2.0
