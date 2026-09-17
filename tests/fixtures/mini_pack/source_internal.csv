@@ -1,0 +1,4 @@
+internal_id,registered_name,gene_symbol,source_db,external_id,uniprot_ref,registered_by,registration_date,status
+TGT-2433,SEPT9,SEPT9,Manual,,Q9UHD8,jsmith,2019-03-15,active
+TGT-9529,VIP peptides,,Manual,,P01282,adas,2021-02-26,active
+TGT-1392,Hepatocyte nuclear factor 4-alpha,HNF4A,Manual,,P41235,lpatel,2022-09-09,active

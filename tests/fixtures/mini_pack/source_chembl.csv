@@ -1,0 +1,7 @@
+chembl_id,pref_name,target_type,accession,gene_symbol,organism,tax_id,target_confidence
+CHEMBL2147,Serine/threonine-protein kinase pim-1,SINGLE PROTEIN,Q9P1W9,PIM1,Homo sapiens,9606,7
+CHEMBL4523,Serine/threonine-protein kinase pim-2,SINGLE PROTEIN,Q9P1W9,PIM2,Homo sapiens,9606,8
+CHEMBL3012,"cAMP and cAMP-inhibited cGMP 3',5'-cyclic phosphodiesterase 10A",SINGLE PROTEIN,Q9Y233,PDE10A,Homo sapiens,9606,7
+CHEMBL3012,"High affinity 3',5'-cyclic-AMP phosphodiesterase 7A",SINGLE PROTEIN,Q13946,PDE7A,Homo sapiens,9606,9
+CHEMBL2099,Prostate-specific antigen,SINGLE PROTEIN,P07288,KLK3,Homo sapiens,9606,7
+CHEMBL2264,Puromycin-sensitive aminopeptidase,SINGLE PROTEIN,P55786,NPEPPS,Homo sapiens,9606,8

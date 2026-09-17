@@ -1,0 +1,7 @@
+accession,entry_name,gene_names,protein_name,organism,reviewed,length,database
+P41235,HNF4A_HUMAN,HNF4A,Hepatocyte nuclear factor 4-alpha,Homo sapiens (Human),reviewed,474,Swiss-Prot
+B2RPP8,B2RPP8_HUMAN,HNF4A,Hepatocyte nuclear factor 4-alpha,Homo sapiens (Human),unreviewed,479,TrEMBL
+Q13422-3,IKZF1_HUMAN,IKZF1,Isoform Ik3 of DNA-binding protein Ikaros,Homo sapiens (Human),reviewed,432,Swiss-Prot
+P53779,MK10_HUMAN,MAPK10,Mitogen-activated protein kinase 10,Homo sapiens (Human),reviewed,464,Swiss-Prot
+P07288,KLK3_HUMAN,KLK3,Prostate-specific antigen,Homo sapiens (Human),reviewed,261,Swiss-Prot
+P55786,PSA_HUMAN,NPEPPS,Puromycin-sensitive aminopeptidase,Homo sapiens (Human),reviewed,919,Swiss-Prot

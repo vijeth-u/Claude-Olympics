@@ -1,5 +1,6 @@
-# All packages must come from JFrog Artifactory.
-# PIP_INDEX_URL is set by the agent — no extra config needed.
-pandas==2.1.4
-numpy==1.26.2
-lightgbm==4.2.0
+# No third-party packages.
+#
+# This tool is stdlib-only by design: urllib for the authority, csv/json for I/O. That
+# removes JFrog availability, wheel-build and pip-conflict risk from the submission
+# entirely. If you add a dependency, pin it exactly (e.g. requests==2.32.3) and confirm
+# it resolves from Lilly's JFrog Artifactory, not just public PyPI.
