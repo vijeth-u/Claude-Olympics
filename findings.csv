@@ -1,0 +1,20 @@
+what,where,proof
+COUNTRY_NAME_WHITESPACE,United States,"Trailing space on the name in extracts 2026_02, 2026_03 splits it into two markets when grouped; stripped before analysis."
+STATUS_VALUE_DRIFT,Denmark,"Launch Status written 'ACTIVE ', 'ACTIVE', 'active ' across extracts instead of 'Active': same status, inconsistent casing and whitespace."
+STATUS_INVALID_ENTRY,Croatia,Launch Status 'Invalid Entry' on one pack row (April) is not a real status; the market's other rows say Active.
+DATE_STORED_AS_NUMBER,Expected Launch Shipment Date,"In Tracker_2026_03 this column holds Excel serial integers (e.g. 46416) with no date format, so it loads as int; converted from serial for the diff."
+DUPLICATE_ROW,Japan,Japan VLR-4MG-1VIAL appears 2x in Tracker_2026_03 with conflicting Expected Launch Shipment Date (2027-02-05 vs 2027-02-12).
+SKU_NOT_IN_REFERENCE,Mexico,"VLR-16MG-4PEN is in every extract but not in Ref_SKUs, which lists only 2/4/8/12MG packs."
+APPROVAL_BEFORE_SUBMISSION,Colombia;Peru,National pathway approved before its own filing (Peru 2024-08-03<2024-08-24; Colombia 2024-05-22<2024-06-20). 8 Reliance/Mutual Recognition markets show this legitimately.
+APPROVAL_TARGET_NOT_ACTUAL,Japan;Turkey;Vietnam,"Target approval passed, Actual still blank (Japan 2026-03-16, Vietnam 2026-03-31, Turkey 2026-03-20); dashboard uses Target as approval [lead-ref: R4-Q06-cbf5]."
+SHIPMENT_BEFORE_APPROVAL,Estonia;Italy;Spain,MTS (no bonded warehouse) ships before approval: Spain 2026-05-30<2026-08-14; Italy 2026-06-12<2026-08-28; Estonia 2027-02-25<2027-04-28. 9 MTO bonded markets excused [lead-ref: R4-Q15-86d0].
+BLANK_TREATED_AS_PASS,Denmark;Mexico,"Direct-route markets leave Plant setup and Demand Loaded blank, not No; dashboard fails only an explicit No [lead-ref: R4-Q06-cbf5]. Via Hub blanks are legit."
+DEMAND_NEVER_LOADED,Denmark;Mexico,Demand Loaded blank and undated in all 4 extracts on a Direct route: factory never got a number; earliest = refresh + lead time [lead-ref: R4-Q03-8950].
+FLAG_YES_BUT_NO_DATE,Bulgaria;Hungary;Vietnam,"Flag says Yes but Warehouse Setup Date is blank on a Direct route (not a hub market), so the Yes is unevidenced."
+DEMAND_LOADED_TOO_LATE,Finland;Italy;Spain,Load + site lead time lands after claim: Spain 2026-03-30+16w=2026-07-20>2026-05-30; Italy 2026-03-29+16w=2026-07-19>2026-06-12; Finland 2026-04-15+26w=2026-10-14>2026-09-26 [lead-ref: R4-Q03-8950].
+SETUP_DATE_AFTER_SHIPMENT,Ireland;Romania;Turkey,"Primary-site plant setup after ship: Ireland 2026-10-14>2026-09-15; Turkey 2026-09-18>2026-08-15; Romania 2026-10-06>2026-09-03. Secondary sites set up post-launch by design, excluded."
+PLANT_CAPACITY_EXCEEDED,Canada;Czechia;Estonia;Finland;Japan;Norway;Peru;Poland;United States,"Calderon loaded Y1 volume 6,280,000 > capacity 6,259,000 (+21,000 = 2d); unloaded demand excluded [lead-ref: R4-Q16-7d67]."
+DATE_MOVED_WITHOUT_RECORD,Canada;United States,Expected ship slides with empty change log: Canada +45d every extract; United States +45d every extract. Logged moves (CR-118) excluded.
+DATE_PASSED_NO_REPLAN,Croatia,"Committed ship date already before RefreshDate 2026-04-25, no revised date or log: Croatia 2026-03-02 [lead-ref: R4-Q07-9d48]."
+STARTING_DOSE_UNAVAILABLE,Japan;Turkey;Vietnam,2MG start pack ships after the claimed date: Japan 2027-06-27 vs 2027-01-29; Vietnam 2027-04-20 vs 2026-11-14; Turkey 2027-01-15 vs 2026-08-15 [lead-ref: R4-Q04-611e].
+ROLLUP_ANY_NOT_ALL,Japan;Turkey;Vietnam,GREEN because a higher-dose pack passes while the 2MG start pack is not ready at the claimed date; dashboard passes a market if ANY row passes [lead-ref: R4-Q06-cbf5].

@@ -1,0 +1,31 @@
+country,rank,slippage_days,impact_score,driver,evidence
+Japan,1,149,268200000,STARTING_DOSE_UNAVAILABLE,"2MG start pack ships 2027-06-27; claim 2027-01-29 is a higher-dose pack: 149d x 1,800,000 [lead-ref: R4-Q04-611e]"
+Mexico,2,111,53280000,DEMAND_NEVER_LOADED,"demand never loaded; 2026-04-25+26w lead = 2026-10-24 vs claim 2026-07-05: 111d x 480,000 [lead-ref: R4-Q03-8950]"
+Turkey,3,153,39780000,STARTING_DOSE_UNAVAILABLE,"2MG start pack ships 2027-01-15; claim 2026-08-15 is a higher-dose pack: 153d x 260,000 [lead-ref: R4-Q04-611e]"
+Italy,4,77,39270000,SHIPMENT_BEFORE_APPROVAL,"MTS cannot ship before approval 2026-08-28; claim 2026-06-12: 77d x 510,000 [lead-ref: R4-Q15-86d0]"
+Vietnam,5,157,37680000,STARTING_DOSE_UNAVAILABLE,"2MG start pack ships 2027-04-20; claim 2026-11-14 is a higher-dose pack: 157d x 240,000 [lead-ref: R4-Q04-611e]"
+Spain,6,76,31920000,SHIPMENT_BEFORE_APPROVAL,"MTS cannot ship before approval 2026-08-14; claim 2026-05-30: 76d x 420,000 [lead-ref: R4-Q15-86d0]"
+Denmark,7,81,5022000,DEMAND_NEVER_LOADED,"demand never loaded; 2026-04-25+16w lead = 2026-08-15 vs claim 2026-05-26: 81d x 62,000 [lead-ref: R4-Q03-8950]"
+Romania,8,33,3630000,SETUP_DATE_AFTER_SHIPMENT,"Primary plant setup 2026-10-06 after claim 2026-09-03: 33d x 110,000 [lead-ref: R4-Q12-7c89]"
+Ireland,9,29,3480000,SETUP_DATE_AFTER_SHIPMENT,"Primary plant setup 2026-10-14 after claim 2026-09-15: 29d x 120,000 [lead-ref: R4-Q12-7c89]"
+Croatia,10,54,1890000,DATE_PASSED_NO_REPLAN,"claim 2026-03-02 already passed, no replan; earliest 2026-04-25: 54d x 35,000 [lead-ref: R4-Q07-9d48]"
+Estonia,11,62,1364000,SHIPMENT_BEFORE_APPROVAL,"MTS cannot ship before approval 2027-04-28; claim 2027-02-25: 62d x 22,000 [lead-ref: R4-Q15-86d0]"
+Finland,12,18,990000,DEMAND_LOADED_TOO_LATE,"demand loaded 2026-04-15+26w lead = 2026-10-14 vs claim 2026-09-26: 18d x 55,000 [lead-ref: R4-Q03-8950]"
+United States,13,0,0,NONE,date slid silently each extract (flagged) but every launch condition is met by current claim 2027-02-19; drift alone is not slippage [lead-ref: R4-Q14-a89a]
+Germany,14,0,0,NONE,no problem found: every launch condition met by claim 2027-01-30
+China,15,0,0,NONE,no problem found: every launch condition met by claim 2026-11-02
+Brazil,16,0,0,NONE,no problem found: every launch condition met by claim 2027-01-15
+Canada,17,0,0,NONE,date slid silently each extract (flagged) but every launch condition is met by current claim 2027-02-01; drift alone is not slippage [lead-ref: R4-Q14-a89a]
+Korea,18,0,0,NONE,no problem found: every launch condition met by claim 2026-08-18
+Poland,19,0,0,NONE,no problem found: every launch condition met by claim 2027-01-02
+Malaysia,20,0,0,NONE,no problem found: every launch condition met by claim 2026-12-29
+Greece,21,0,0,NONE,no problem found: every launch condition met by claim 2026-10-06
+Portugal,22,0,0,NONE,no problem found: every launch condition met by claim 2026-12-31
+Chile,23,0,0,NONE,no problem found: every launch condition met by claim 2026-12-22
+Colombia,24,0,0,NONE,no problem found: every launch condition met by claim 2027-01-03
+Czechia,25,0,0,NONE,no problem found: every launch condition met by claim 2026-12-03
+Hungary,26,0,0,NONE,no problem found: every launch condition met by claim 2026-12-14
+Peru,27,0,0,NONE,no problem found: every launch condition met by claim 2026-12-09
+Norway,28,0,0,NONE,no problem found: every launch condition met by claim 2026-12-27
+Bulgaria,29,0,0,NONE,no problem found: every launch condition met by claim 2026-12-26
+Slovakia,30,0,0,NONE,no problem found: every launch condition met by claim 2026-11-10
