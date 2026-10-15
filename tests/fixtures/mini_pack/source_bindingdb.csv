@@ -1,7 +1,0 @@
-target_name,species,uniprot_id,gene_symbol,assay_count,binding_type
-Mitogen-activated protein kinase 10,H. sapiens,A6NFS3,JNK3,120,Kd
-MAPK10 protein,human,P53779,MAPK10,64,IC50
-KISS1,Human,Q969F8,KISS1,45,Ki
-Metastasis-suppressor KiSS-1,Homo sapiens,Q15726,KISS1,12,Ki
-VIP peptides,human,P01282,,86,IC50
-Isoform Ik3 of DNA-binding protein Ikaros,Homo sapiens,Q13422-3,IKZF1,13,Kd
