@@ -1,0 +1,34 @@
+{
+  "operations": [
+    {
+      "op": "set_tool_arg_parsing",
+      "component": "orchestrator",
+      "mode": "object",
+      "note": "kestrel-pro-latest now resolves to kp-2026-08, which returns tool-call arguments as a JSON object; orchestrator still parses a JSON string (tool_arg_parsing: string). Parse the encoding the snapshot returns."
+    },
+    {
+      "op": "set_retry_policy",
+      "component": "orchestrator",
+      "policy": "exp_backoff_jitter",
+      "note": "429s are retried immediately (retry_policy: immediate) although Kestrel returns retry_after_ms and counts rejected requests against the allowance; all retry attempts burn out within ~0.3 s and the stage is re-dispatched. Kestrel's recommended policy. The tier itself is set by billing agreement, so request_rate_tier is not used."
+    },
+    {
+      "op": "set_result_chunking",
+      "component": "extract",
+      "enabled": true,
+      "note": "The 24 KB cap cannot be raised (Kestrel docs section 6); chunking delivers large papers whole in <=24 KB parts."
+    },
+    {
+      "op": "set_follow_cursor",
+      "component": "cite_check",
+      "enabled": true,
+      "note": "v2.3 is retired, so pinning it would be rejected; fetch all pages."
+    },
+    {
+      "op": "set_reasoning",
+      "component": "synthesize",
+      "mode": "off",
+      "note": "Restore Monday's effective setting explicitly (reasoning off for synthesis); removes ~16k billed reasoning tokens per review."
+    }
+  ]
+}

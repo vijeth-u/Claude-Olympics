@@ -48,8 +48,3 @@ Thumbs.db
 .vscode/
 *.swp
 *.swo
-
-# local data
-sample_pack/
-pack/
-my_pack/
